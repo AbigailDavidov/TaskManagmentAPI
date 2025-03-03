@@ -32,7 +32,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-```{
+```
+{
 
     "description": "Complete project report",
 
@@ -40,11 +41,13 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "active"
 
-}```
+}
+```
 
 ### **Response (201 Created)**
 
-```{
+```
+{
 
     "id": "550e8400-e29b-41d4-a716-446655440000",
 
@@ -54,7 +57,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "active"
 
-}```
+}
+```
 
 ---
 
@@ -70,7 +74,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 ### **Response (200 OK)**
 
-```[
+```
+[
 
     {
 
@@ -84,7 +89,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     }
 
-]```
+]
+```
 
 ---
 
@@ -100,7 +106,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 ### **Response (200 OK)**
 
-```{
+```
+{
 
     "id": "550e8400-e29b-41d4-a716-446655440000",
 
@@ -110,7 +117,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "active"
 
-}```
+}
+```
 
 ---
 
@@ -124,7 +132,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-```{
+```
+{
 
     "description": "Complete project report (Updated)",
 
@@ -132,11 +141,13 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "completed"
 
-}```
+}
+```
 
 ### **Response (200 OK)**
 
-```{
+```
+{
 
     "id": "550e8400-e29b-41d4-a716-446655440000",
 
@@ -146,7 +157,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "completed"
 
-}```
+}
+```
 
 ---
 
@@ -174,7 +186,8 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-```{
+```
+{
 
     "description": "Complete project report",
 
@@ -182,15 +195,18 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
     "status": "active"
 
-}```
+}
+```
 
 ### **Response (409 Conflict)**
 
-```{
+```
+{
 
     "message": "Conflict: Task with the same description, due date, and status already exists."
 
-}```
+}
+```
 
 **Link to SwaggerHub**\- [https://app.swaggerhub.com/apis/private-987/task-management\_api/1.0\#/](https://app.swaggerhub.com/apis/private-987/task-management_api/1.0#/)
 
