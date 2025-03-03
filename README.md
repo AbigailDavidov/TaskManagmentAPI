@@ -1,8 +1,8 @@
-**TaskManagmentAPI**
+### **TaskManagmentAPI**
 
-I have implemented a well documented RESTful API for Task Management. The API allows users to create, update, read, and delete tasks. For this I used **Flask-RESTX** to generate interactive Swagger documentation for the Flask app**,** the code also includes **logging**, **basic authentication** and **unit tests**. I’ll also add some examples for requests and responses and link to SwaggerHub.
+I have implemented a well documented RESTful API for Task Management. The API allows users to create, update, read, and delete tasks. For this I used **Flask-RESTX** to generate interactive Swagger documentation for the Flask app, the code also includes **logging**, **basic authentication** and **unit tests**. I’ll also add some examples for requests and responses and link to SwaggerHub.
 
- **1\. Logging:**
+ ### **1\. Logging:**
 
 Captures all important actions (fetching tasks, task creation, updates, deletions) and logs errors (such as invalid date format). This will be helpful for debugging or auditing the API behavior.
 
@@ -32,29 +32,29 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-`{`
+```{
 
-    `"description": "Complete project report",`
+    "description": "Complete project report",
 
-    `"due_date": "2025-03-10",`
+    "due_date": "2025-03-10",
 
-    `"status": "active"`
+    "status": "active"
 
-`}`
+}```
 
 ### **Response (201 Created)**
 
-`{`
+```{
 
-    `"id": "550e8400-e29b-41d4-a716-446655440000",`
+    "id": "550e8400-e29b-41d4-a716-446655440000",
 
-    `"description": "Complete project report",`
+    "description": "Complete project report",
 
-    `"due_date": "2025-03-10",`
+    "due_date": "2025-03-10",
 
-    `"status": "active"`
+    "status": "active"
 
-`}`
+}```
 
 ---
 
@@ -70,21 +70,21 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 ### **Response (200 OK)**
 
-`[`
+```[
 
-    `{`
+    {
 
-        `"id": "550e8400-e29b-41d4-a716-446655440000",`
+        "id": "550e8400-e29b-41d4-a716-446655440000",
 
-        `"description": "Complete project report",`
+        "description": "Complete project report",
 
-        `"due_date": "2025-03-10",`
+        "due_date": "2025-03-10",
 
-        `"status": "active"`
+        "status": "active"
 
-    `}`
+    }
 
-`]`
+]```
 
 ---
 
@@ -100,17 +100,17 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 ### **Response (200 OK)**
 
-`{`
+```{
 
-    `"id": "550e8400-e29b-41d4-a716-446655440000",`
+    "id": "550e8400-e29b-41d4-a716-446655440000",
 
-    `"description": "Complete project report",`
+    "description": "Complete project report",
 
-    `"due_date": "2025-03-10",`
+    "due_date": "2025-03-10",
 
-    `"status": "active"`
+    "status": "active"
 
-`}`
+}```
 
 ---
 
@@ -124,29 +124,29 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-`{`
+```{
 
-    `"description": "Complete project report (Updated)",`
+    "description": "Complete project report (Updated)",
 
-    `"due_date": "2025-03-15",`
+    "due_date": "2025-03-15",
 
-    `"status": "completed"`
+    "status": "completed"
 
-`}`
+}```
 
 ### **Response (200 OK)**
 
-`{`
+```{
 
-    `"id": "550e8400-e29b-41d4-a716-446655440000",`
+    "id": "550e8400-e29b-41d4-a716-446655440000",
 
-    `"description": "Complete project report (Updated)",`
+    "description": "Complete project report (Updated)",
 
-    `"due_date": "2025-03-15",`
+    "due_date": "2025-03-15",
 
-    `"status": "completed"`
+    "status": "completed"
 
-`}`
+}```
 
 ---
 
@@ -174,23 +174,23 @@ The task model uses `uuid` for generating unique task IDs, for identifying tasks
 
 `Content-Type: application/json`
 
-`{`
+```{
 
-    `"description": "Complete project report",`
+    "description": "Complete project report",
 
-    `"due_date": "2025-03-10",`
+    "due_date": "2025-03-10",
 
-    `"status": "active"`
+    "status": "active"
 
-`}`
+}```
 
 ### **Response (409 Conflict)**
 
-`{`
+```{
 
-    `"message": "Conflict: Task with the same description, due date, and status already exists."`
+    "message": "Conflict: Task with the same description, due date, and status already exists."
 
-`}`
+}```
 
 **Link to SwaggerHub**\- [https://app.swaggerhub.com/apis/private-987/task-management\_api/1.0\#/](https://app.swaggerhub.com/apis/private-987/task-management_api/1.0#/)
 
